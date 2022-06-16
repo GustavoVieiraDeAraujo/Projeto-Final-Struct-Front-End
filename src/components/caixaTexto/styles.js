@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-    width: 80%;
+    ${'' /* width: 80%; */}
     background-color: #0A369F;
-    padding: 1rem 5%;
-    padding-bottom: 1.5rem;
+    padding: 1rem    5%;
+    padding-bottom: 0;
+    ${'' /* padding-bottom: 1.5rem; */}
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +19,7 @@ export const Container = styled.div`
     }
 
     p {
-        max-width: 750px;
+        font-size: 1.25rem;
         align-self: center;
         margin-top: 0;
     }

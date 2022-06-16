@@ -9,7 +9,7 @@ console.log(cor)
 return(
     <Container>
     
-    <CaixaTexto texto={service.description} titulo={service.name} direcao="e" cor={cor}></CaixaTexto>
+    <CaixaTexto texto={<>{service.description}<br/><br/></>} titulo={service.name} direcao="e" cor={cor} tam_max_texto="750px"></CaixaTexto>
     <img src={imgTeste} alt={service.name}/>
 
     </Container>
