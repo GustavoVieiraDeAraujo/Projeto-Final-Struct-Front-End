@@ -8,7 +8,7 @@ return(
     <Container>
     <img src={imgTeste} alt={service.name}/>
 
-    <CaixaTexto texto={<>{service.description} <br/><br/></>} titulo={service.name} cor={cor} tam_max_texto="750px"></CaixaTexto>
+    <CaixaTexto texto={<>{service.description} <br/><br/></>} titulo={<><br/>{service.name}</>}  cor={cor} tam_max_texto="750px"></CaixaTexto>
 
     </Container>
 )
