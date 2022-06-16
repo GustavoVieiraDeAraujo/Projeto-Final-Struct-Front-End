@@ -15,7 +15,7 @@ export const Container = styled.div`
         transform: translate(0, -50px);
     }
 
-    @media screen and (max-width: 1150px) {
+    @media screen and (max-width: 1200px) {
         img {
             right: 5%;
             transform: translate(0, -75%);
