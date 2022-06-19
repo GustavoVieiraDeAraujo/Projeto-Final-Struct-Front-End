@@ -32,7 +32,7 @@ const Navbar = () => {
             </div>
             <div className="botao">
                 <Button text="Contato" link={"/contato"} className="botao_contato"/>
-                <button className="botao_menu" onClick={togleMenu}><hr/><br/><hr/><br/><hr/></button>
+                <button className="botao_menu" onClick={togleMenu}><hr/><hr/><hr/></button>
 
             </div>
         </div>
