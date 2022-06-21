@@ -4,7 +4,6 @@ import { Container } from "./styles"
 import imgTeste from "./../../../assets/foguete.png" // Só para teste
 
 const ServiceCardE = ({service, cor}) => {
-console.log(cor)
 
 return(
     <Container>

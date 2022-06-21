@@ -4,36 +4,38 @@ import foquete_outline from "../../assets/foguetinho-outline.png"
 import ServiceCardD from "../../components/servicesCard/direita"
 import ServiceCardE from "../../components/servicesCard/esquerda"
 import PartnersCard from "../../components/partenersCard"
-
+import { api } from "../../services/api"
+import { useState, useEffect } from "react"
 
 
 
 const HomePage = () => {
-    
-    const service_teste = {
-        name:'Aplicativos',
-        description: 'Soluções em aplicativos Android e IOS, desenvolvidos sob demanda, personalizados para sua necessidade.',
-        image:'./../../assets/foguete.png'}
-    const services_teste = [service_teste]
+
+    const [services, setServices] = useState([])
+
+    useEffect(() => {
+        api.get("/services/index")
+        .then(response => setServices(response.data))
+    }, [])
 
 
-    const partner_teste = {
-        link:"https://google.com",
-        image: "https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
-    }
 
-    const partners_teste = [
-        partner_teste, partner_teste, partner_teste, partner_teste, partner_teste, partner_teste
-    ]
+    const [partners, setPartners] = useState([])
+
+    useEffect(() => {
+        api.get("partnerships/index")
+        .then(response => setPartners(response.data))
+    },[])
+
 
     return (
         <Container>
             <img src={logo} alt='{Struct}' className="logo"/>
             <section className="services">
                 <h1 className="services_titulo">Serviços</h1>
-                <ServiceCardD service={services_teste[0]} />
-                <ServiceCardE service={services_teste[0]} cor="#2DA2FF" />
-                <ServiceCardD service={services_teste[0]} cor="#1D7CFA" />
+                {services[0] && <ServiceCardD service={services[0]} />}
+                {services[1] && <ServiceCardE service={services[1]} cor="#2DA2FF" />}
+                {services[2] && <ServiceCardD service={services[2]} cor="#1D7CFA"/>}
 
                 
             </section>
@@ -42,10 +44,11 @@ const HomePage = () => {
                 <h1 className="parceiros_titulo">Parceiros</h1>
                 <span/>
                 <div className="partners_container">
-                    {partners_teste.map((item) => {return(
-                        <PartnersCard image={item.image} link={item.link}/>
+                    {partners.map((item) => {return(
+                        <PartnersCard image={"https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"} link={item.link}/>
                     )
                     })}
+
                 </div>
                 
             </section>
