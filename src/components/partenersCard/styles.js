@@ -12,11 +12,12 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     margin-top: 4.16rem;
+    overflow: hidden;
 
 
     img {
-        width: 305px;
-        height: auto;
+        max-width: 305px;
+        max-height: 248px;
         justify-self: center;
         align-self: center;
     }

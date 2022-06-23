@@ -13,7 +13,7 @@ export const Container = styled.div`
         left: 5%;
         height: 150px;
         width: auto;
-        transform: translate(0, -50px);
+        transform: translate(0, -80%);
     }
 
     @media screen and (max-width: 1400px) {
