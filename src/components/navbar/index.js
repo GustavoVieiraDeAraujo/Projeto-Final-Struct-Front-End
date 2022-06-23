@@ -32,7 +32,7 @@ const Navbar = () => {
             </div>
             <div className="botao">
                 <Button text="Contato" link={"/contato"} className="botao_contato"/>
-                <button className="botao_menu" onClick={togleMenu}><hr/><br/><hr/><br/><hr/></button>
+                <button className="botao_menu" onClick={togleMenu}><hr/><hr/><hr/></button>
 
             </div>
         </div>
@@ -41,6 +41,7 @@ const Navbar = () => {
             <Link to={'/'} className="link_mobile" style={change_link_color('/')}>Home</Link>
             <Link to={'/portifolios'} className="link_mobile" style={change_link_color('/portifolios')}>Portifólios</Link>
             <Link to={'/about'} className="link_mobile" style={change_link_color('/about')}>Sobre Nós</Link>
+            <Link to={'/contato'} className="link_mobile" style={change_link_color('/contato')}>Contato</Link>
         </div>
         </Container>
     )

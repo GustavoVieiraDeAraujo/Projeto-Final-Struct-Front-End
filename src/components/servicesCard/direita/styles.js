@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const Container = styled.div`
 
     display: flex;
-    margin-top: 116px;
+    margin-top: 124px;
 
     img {
         position: absolute;
@@ -18,7 +18,7 @@ export const Container = styled.div`
     @media screen and (max-width: 1200px) {
         img {
             right: 5%;
-            transform: translate(0, -75%);
+            transform: translate(0, -80%);
 
         }
     }
