@@ -15,7 +15,9 @@ const HomePage = () => {
 
     useEffect(() => {
         api.get("/services/index")
-        .then(response => setServices(response.data))
+        .then(response => setServices(response.data.sort((a,b) => {
+            return a.id - b.id
+        })))
     }, [])
 
 
