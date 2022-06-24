@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Portfolio Institucional Struct — Front-End
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto final do processo trainee da **Struct** (empresa junior de Engenharia de Computacao da UnB, 2022). SPA em React para o site institucional da Struct, com paginas publicas (home, sobre nos, portfolio, contato) e painel administrativo (CRUD de membros, projetos, parcerias).
 
-## Available Scripts
+> **Back-End:** [Projeto-Final-Struct-Back-End](https://github.com/GustavoVieiraDeAraujo/Projeto-Final-Struct-Back-End) (Rails API na porta 3333)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Sumario
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Participantes](#participantes)
+- [Tecnologias](#tecnologias)
+- [Escopo do Projeto](#escopo-do-projeto)
+- [Requisitos](#requisitos)
+- [Como Executar](#como-executar)
+- [Paginas](#paginas)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Participantes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Nome                              |
+|-----------------------------------|
+| Gustavo Vieira de Araujo          |
+| Miguel Carvalho de Medeiros       |
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tecnologias
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Tecnologia         | Uso                                              |
+|--------------------|--------------------------------------------------|
+| React 18           | Framework de UI                                  |
+| react-router-dom 6 | Roteamento client-side                           |
+| styled-components  | Estilizacao CSS-in-JS                            |
+| axios              | Cliente HTTP para comunicacao com a API           |
+| react-icons        | Biblioteca de icones                             |
+| Create React App   | Build tool                                       |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Escopo do Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Funcionalidade                   | Implementacao                                                |
+|----------------------------------|--------------------------------------------------------------|
+| Home                             | Listagem de servicos e parceiros da API                       |
+| Sobre Nos                        | Missao, visao, valores e membros da API                       |
+| Portfolio                        | Listagem de projetos com detalhes                             |
+| Contato                          | Formulario de contato vinculado a servico                     |
+| Login Admin                      | Autenticacao por email/senha com token                        |
+| CRUD Membros (admin)             | Criar, editar e listar membros                                |
+| CRUD Parcerias (admin)           | Criar, editar e listar parcerias                              |
+| CRUD Projetos (admin)            | Criar, editar e listar projetos                               |
+| Navbar responsiva                | Menu hamburger para mobile                                    |
+| Footer                           | Links para redes sociais (Instagram, Facebook, LinkedIn)      |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Requisitos
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Node.js >= 14
+- Yarn ou npm
+- Back-End rodando em `http://localhost:3333`
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Como Executar
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+yarn install
+yarn start
+```
 
-### Code Splitting
+> O back-end Rails deve estar rodando na porta 3333 antes de iniciar o front-end.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Paginas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Rota              | Pagina           | Descricao                                           |
+|-------------------|------------------|------------------------------------------------------|
+| `/`               | Home             | Servicos e parceiros da Struct                        |
+| `/about`          | Sobre Nos        | MVV, membros da equipe                                |
+| `/portifolios`    | Portfolio        | Projetos realizados                                   |
+| `/contato`        | Contato          | Formulario de contato                                 |
+| `/admin`          | Login Admin      | Autenticacao de administrador                         |
+| `/admin/members`  | Membros          | Listar, criar e editar membros                        |
+| `/admin/partners` | Parcerias        | Listar, criar e editar parcerias                      |
+| `/admin/projects` | Projetos         | Listar, criar e editar projetos                       |
