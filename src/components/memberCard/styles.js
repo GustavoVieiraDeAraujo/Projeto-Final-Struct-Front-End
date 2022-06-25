@@ -26,6 +26,12 @@ export const Container = styled.div`
         left: 18%;
         padding: 0.25rem 0;
         padding-left: 2%;
+        color: #F8F8FF;
+    }
+
+    .idade{
+    color: #F8F8FF;
+
     }
 
     .nome {

@@ -20,7 +20,7 @@ const Login = () => {
             <div className="form">
                 <div className="email">
                     <h2>Email</h2>
-                    <input onChange={(event) => setEmail(event.target.value)} />
+                    <input onChange={(event) => setEmail(event.target.value)} type="email" />
                 </div>
                 <div className="senha">
                     <h2>Senha</h2>

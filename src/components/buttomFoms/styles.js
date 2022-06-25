@@ -8,7 +8,7 @@ background-color: #FD8D4B;
 border: none;
 font-size: 2rem;
 font-weight: 700;
-padding: 5px 1.5rem;
+padding: 5px 2rem;
 border-radius: 12px;
 cursor: pointer;
 
