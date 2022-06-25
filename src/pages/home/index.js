@@ -32,7 +32,6 @@ const HomePage = () => {
 
     return (
         <Container>
-        {console.log(services)}
             <img src={logo} alt='{Struct}' className="logo"/>
             <section className="services">
                 <h1 className="services_titulo">Serviços</h1>
