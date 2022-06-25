@@ -1,12 +1,13 @@
 
 
 
-const Portifolios = () => {
-    return(
-        <>
-           <h1>portilofios</h1>
-        </>
-    )
+const Portifolios = () =>  {
+
+return(
+    <>
+        Portfilofios
+    </>
+)
 }
 
 export default Portifolios
