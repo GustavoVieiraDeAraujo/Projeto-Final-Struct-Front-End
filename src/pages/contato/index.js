@@ -40,7 +40,7 @@ const Contato = () => {
                             <label className="service_label" style={service_id == item.id ? {backgroundColor: service_colors[number], border: "4px solid #FD8D4B"} : {backgroundColor: service_colors[number]}}>
                                 <span className="service_span">
                                     <p className="service_p">{item.name}</p>
-                                    <img src={photo.defaults.baseURL + item.images_url[0]} className="service_image" />
+                                    <img src={photo.defaults.baseURL + item.images_url[0]} className="service_image" alt={item.name} />
                                 </span>
                                 <input onChange={(event) => setServiceId(event.target.value)} type="radio" id={item.name} name="service" value={item.id} className="service_input"/>
                             </label>

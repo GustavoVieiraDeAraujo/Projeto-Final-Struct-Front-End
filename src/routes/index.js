@@ -12,6 +12,7 @@ import PartnershipEdit from "../pages/adiminPages/partnershipEdit";
 import PartnershipIndex from "../pages/adiminPages/partnershipIndex";
 import Contato from "../pages/contato";
 import HomePage from "../pages/home";
+import PortifolioPage from "../pages/portfidolioPage";
 import Portifolios from "../pages/portifolios";
 
 const Rotas = () => {
@@ -23,6 +24,7 @@ const Rotas = () => {
             <Route exact path="/" element={<HomePage />}/>
             <Route exact path="/about" element={<About />}/>
             <Route exact path="/portifolios" element={<Portifolios />} />
+            <Route exact path="/portifolios/:id" element={<PortifolioPage />} />
             <Route exact path="/contato" element={<Contato />} />
 
             {/* Admin Routes */}
