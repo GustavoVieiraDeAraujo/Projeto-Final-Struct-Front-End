@@ -7,6 +7,9 @@ import MemberAdd from "../pages/adiminPages/memberAdd";
 import MemberEdit from "../pages/adiminPages/memberEdit";
 import MembersIndex from "../pages/adiminPages/membersIndex";
 import AdminMenu from "../pages/adiminPages/menu";
+import PartnershipAdd from "../pages/adiminPages/partnershipAdd";
+import PartnershipEdit from "../pages/adiminPages/partnershipEdit";
+import PartnershipIndex from "../pages/adiminPages/partnershipIndex";
 import Contato from "../pages/contato";
 import HomePage from "../pages/home";
 import Portifolios from "../pages/portifolios";
@@ -29,6 +32,11 @@ const Rotas = () => {
             <Route exact path="/administrator/member/add" element={admin ? <MemberAdd /> : <Navigate to="/administrator/" /> } />
             <Route exact path="/administrator/member" element={admin ? <MembersIndex /> : <Navigate to="/administrator/" /> } />
             <Route path="/administrator/member/edit/:id" element={admin ? <MemberEdit /> : <Navigate to="/administrator/" /> } />
+            <Route exact path="/administrator/partnership/add" element={admin ? <PartnershipAdd /> : <Navigate to="/administrator/" /> } />
+            <Route exact path="/administrator/partnership" element={admin ? <PartnershipIndex /> : <Navigate to="/administrator/" /> } />
+            <Route path="/administrator/partnership/edit/:id" element={admin ? <PartnershipEdit /> : <Navigate to="/administrator/" /> } />
+
+            
 
         </Routes>
     )

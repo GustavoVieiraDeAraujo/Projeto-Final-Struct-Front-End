@@ -15,6 +15,7 @@ const MembersIndex = () => {
 
     return(
         <Container>
+        <h1>Selecione um Membro</h1>
             <div className="membros">
                 {members.map((item) => {
                     return(

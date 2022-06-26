@@ -9,7 +9,7 @@ const AdminMenu = () => {
 
     const links = [[['Adicionar Membro', 'member/add'],['Editar Membro', 'member']]
         ,[['Adicionar Projeto', 'project/add'],['Editar Projeto', 'project']]
-        ,[['Adicionar Parceiro', 'partnership/add'],['Editar Parceiro', 'partnership']]]
+        ,[['Adicionar Parceria', 'partnership/add'],['Editar Parceria', 'partnership']]]
 
     const {logout, admin} = useAdminContext()
 

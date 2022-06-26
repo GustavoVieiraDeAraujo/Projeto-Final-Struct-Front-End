@@ -13,8 +13,18 @@ export const Container = styled.section`
         text-decoration: none;
 
         .link {
+            display: flex;
+            flex-direction: column;
             text-decoration: none;
             font-color: inherit;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            color: #F8F8FF;
+            align-self: center;
+
         }
         
         h1 {
@@ -25,7 +35,7 @@ export const Container = styled.section`
             color: #FD8D4B;
         }
 
-        .membros {
+        .parcerias {
             margin-top: 4rem;
             display: flex;
             flex-wrap: wrap;
