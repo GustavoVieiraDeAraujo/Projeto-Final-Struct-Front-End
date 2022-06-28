@@ -16,7 +16,7 @@ const AdminMenu = () => {
     const adminValidation = () => {
         if(admin){
             return(
-                <>
+                <MenuContainer>
                     <h1>Página do Adiministrador</h1>
                     <h2>Olá, {admin.name}</h2>
                     {links.map((item) => {
@@ -29,7 +29,7 @@ const AdminMenu = () => {
                     })}
         
                     <ButtomForms onClick={() => logout()} >Deslogar</ButtomForms>
-                </>
+                </MenuContainer>
             )
         } else {
             return(

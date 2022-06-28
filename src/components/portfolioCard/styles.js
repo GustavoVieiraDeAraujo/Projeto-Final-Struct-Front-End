@@ -14,4 +14,11 @@ export const Container = styled.div`
     .project_name {
         margin-bottom: 1rem;
     }
+
+    @media screen and (max-width: 1750px ) {
+        img {
+        top: 0;
+
+        }
+    }
 `

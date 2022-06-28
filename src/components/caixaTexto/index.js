@@ -22,7 +22,7 @@ const CaixaTexto = ({texto, direcao="d", titulo=null, cor_titulo="#F8F8FF", cor=
     return(
         <Container style={estilo && estilo}>
             {titulo && <h1 style={estilo_titulo}>{titulo}</h1>}
-            <p style={{maxWidth : tam_max_texto }}>
+            <p style={{"max-width" : tam_max_texto }}>
                 {texto}
             </p>
         </Container>

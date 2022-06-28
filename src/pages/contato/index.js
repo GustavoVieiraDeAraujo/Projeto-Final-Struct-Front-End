@@ -3,6 +3,8 @@ import { ButtomForms } from "../../components/buttomFoms/styles"
 import { api, photo } from "../../services/api"
 import { Container } from "./styles"
 
+import avatar from "../../assets/avatar redondo.png"
+
 const Contato = () => {
 
     const [services, setServices] = useState([])
@@ -18,6 +20,10 @@ const Contato = () => {
     const [email, setEmail] = useState('')
     const [service_id, setServiceId] = useState(0)
     const [about, setAbout] = useState('')
+
+    const createContact = () => {
+        api.post('contacts/create', {name, email, service_id})
+    }
 
     return (
         <Container>
@@ -40,7 +46,7 @@ const Contato = () => {
                             <label className="service_label" style={service_id == item.id ? {backgroundColor: service_colors[number], border: "4px solid #FD8D4B"} : {backgroundColor: service_colors[number]}}>
                                 <span className="service_span">
                                     <p className="service_p">{item.name}</p>
-                                    <img src={photo.defaults.baseURL + item.images_url[0]} className="service_image" alt={item.name} />
+                                    <img src={item.images_url ? photo.defaults.baseURL + item.images_url[0] : avatar} className="service_image" alt={item.name} />
                                 </span>
                                 <input onChange={(event) => setServiceId(event.target.value)} type="radio" id={item.name} name="service" value={item.id} className="service_input"/>
                             </label>

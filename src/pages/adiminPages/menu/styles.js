@@ -30,4 +30,6 @@ export const MenuContainer = styled.section`
         justify-content: space-around;
         color: #FD8D4B;
     }
+
+    margin-bottom: 8rem;
     `

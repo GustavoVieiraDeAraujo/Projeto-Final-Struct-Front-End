@@ -38,7 +38,6 @@ const Portifolios = () =>  {
 
 return(
     <Container>
-    {console.log(projects)}
         <h1>Portifólios</h1>
         {projects.map((item) => {
             return(

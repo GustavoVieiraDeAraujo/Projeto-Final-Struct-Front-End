@@ -26,6 +26,7 @@ const PartnershipEdit = () => {
         const formData = new FormData()
         formData.append('images[]', images[0])
 
+
         let response = await api.post(`partnerships/add_images/${id}`, formData)
         if (response.data){
             setImages(response.data)

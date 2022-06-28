@@ -14,7 +14,6 @@ export const Container = styled.section`
         top: -17%;
         text-decoration: none;
         color: #F8F8FF;
-        width: 80%;
     }
     margin-bottom: 5rem;
     overflow: hidden;

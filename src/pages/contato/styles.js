@@ -49,6 +49,7 @@ export const Container = styled.div`
     .service_div{
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     .service_label {
