@@ -10,7 +10,7 @@ const AdminProvider = ({children}) => {
 
     const login =  async (email, password) => {
         try {
-            const response = await api.get('/administrators/login', {params: {email, password}})
+            const response = await api.post('/administrators/login', {email, password})
             if (response.data){
                 setAdmin(response.data)
                 api.defaults.headers.common['X-administrator-email'] = response.data.email
