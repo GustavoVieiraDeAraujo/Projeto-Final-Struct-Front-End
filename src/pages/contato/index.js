@@ -22,7 +22,7 @@ const Contato = () => {
     const [about, setAbout] = useState('')
 
     const createContact = () => {
-        api.post('contacts/create', {name, email, service_id})
+        api.post('contacts/create', {name, email, about, service_id})
     }
 
     return (
@@ -61,7 +61,7 @@ const Contato = () => {
                 </div>
 
             </div>
-            <ButtomForms onClick={() => console.log(name, email, service_id, about)} >Criar</ButtomForms>
+            <ButtomForms onClick={createContact} >Criar</ButtomForms>
         </Container>
     )
 }
