@@ -21,6 +21,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "resolutions": {
+    "eslint-plugin-jest": "25.3.0"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
